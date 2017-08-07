@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'article-app',
+    selector: 'article',
+    host:{
+        class: 'row'
+    },
     templateUrl: './article.component.html',
     styleUrls: ['./article.component.css']
 })
-export class Article{
-    
+export class ArticleComponent{
+    votes:number = 20;
 }
